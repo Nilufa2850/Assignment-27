@@ -53,7 +53,7 @@ int main ()
     s3=s1+s2 ;
     s3.showData() ;
 
-    int result ;
+    int result=0 ;
     result = s1==s2 ;
     if (result==0)
         cout<<"String are same " ;
