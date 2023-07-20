@@ -29,7 +29,7 @@ class CString
             strcat(temp.str , X.str) ;
             return temp ;
         }
-        bool operator==(CString c)
+        /*bool operator==(CString c)
         {
             int i , j ;
 
@@ -40,7 +40,15 @@ class CString
                         return 0 ;
                     else
                         return 1 ;
-                } 
+                }     
+        }*/
+
+        bool operator==(CString c)
+        {
+            if(strcmp(str , c.str) == 0)
+                return 1 ;
+            else 
+                return 0 ;
         }
         
 };
@@ -55,7 +63,7 @@ int main ()
 
     int result=0 ;
     result = s1==s2 ;
-    if (result==0)
+    if (result==1)
         cout<<"String are same " ;
     else
         cout<<"String are different" ;
